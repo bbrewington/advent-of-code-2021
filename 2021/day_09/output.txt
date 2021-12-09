@@ -1,0 +1,2 @@
+part 1 answer: 506
+part 2 answer: 931200
