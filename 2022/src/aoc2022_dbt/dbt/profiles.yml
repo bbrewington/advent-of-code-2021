@@ -1,0 +1,8 @@
+aoc2022_dbt:
+
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'aoc2022_dbt.duckdb'
+      threads: 24
