@@ -1,2 +1,5 @@
 .idea/*
 .Rproj.user
+**/venv/*
+.Rhistory
+venv
