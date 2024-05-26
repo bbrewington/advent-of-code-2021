@@ -3,3 +3,6 @@
 **/venv/*
 .Rhistory
 venv
+.venv
+.pytest_cache
+__pycache__
