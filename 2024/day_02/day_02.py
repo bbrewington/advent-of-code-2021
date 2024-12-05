@@ -45,3 +45,15 @@ def check_part1_rules(list1):
 
 def count_part1_safe(input_data):
     return sum(check_part1_rules(row) == 'Safe' for row in input_data)
+
+def part2_by_row(row):
+    num_safe = 0
+    for i in range(len(row)):
+        # print(f"Row: {row}")
+        new_list = row.copy()
+        _ = new_list.pop(i)
+        # print(f"new_list w/ index {i} removed: {new_list}")
+        # print(f"check_part1_rules: {check_part1_rules(new_list)}")
+        num_safe += check_part1_rules(new_list) == 'Safe'
+    
+    return 'Safe' if num_safe >= 1 else 'Unsafe'
